@@ -4,6 +4,10 @@
 
 This project began as a hands-on way to better understand how SIEMs work in real-world environments. My goal was to set up the Elastic Stack as a SIEM, collect logs and metrics from a Kali Linux VM, and configure email alerts for potential threats. Through this process, I aimed to deepen my cybersecurity knowledge and build practical skills I can apply in real-world scenarios.
 
+  
+🔗 **Read the full blog post here:**  
+[Elastic Stack-Based SIEM for Log Analysis and Threat Detection](https://medium.com/@rajesh.p3807/configuring-elastic-stack-for-siem-my-journey-with-log-management-and-alerts-48bbcb7c358f)
+
 ### Skills Learned
 
 - Advanced understanding of SIEM concepts and practical application.
@@ -33,3 +37,4 @@ This project began as a hands-on way to better understand how SIEMs work in real
 ![Kibana Visualization](Img/visualization.png)
 - Create an alert rule in Kibana that detects Nmap scan patterns and configure it to trigger email notifications for real-time response.
 ![Nmap Alert Configuration](Img/alert.png)
+
