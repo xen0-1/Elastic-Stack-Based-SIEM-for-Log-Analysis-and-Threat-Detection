@@ -18,11 +18,18 @@ This project began as a hands-on way to better understand how SIEMs work in real
 - Telemetry shippers (Filebeat and Metricbeat) for collecting system logs and performance metrics from Kali Linux.
 - Virtualized Kali Linux environment for generating realistic system activity and security events.
 - Alerting frameworks (Kibana Alerting and Elastalert) for real-time threat detection and email notifications.
-- Mail transfer agent (Postfix/SMTP) for sending automated alerts based on detection rules.
 - Virtualization platform (VirtualBox/VMware) to simulate a controlled test environment.
-- Linux command-line utilities for configuration, monitoring, and log validation.
 
 ## Steps
-Example below.
-
-*Ref 1: Network Diagram*
+- Install Kali Linux either on your system directly or as a virtual machine using a hypervisor like VirtualBox or VMware.
+- Sign up for a free trial on the Elastic Cloud platform to access the Elastic Stack.
+- From the Elastic Defend integration page, select your platform (Linux).
+![Elastic Defend Integration Page](Img/Integration.png)
+- Install the Elastic Agent on the Kali Linux machine to enable log collection and monitoring.
+- On the Kali Linux machine, run an Nmap scan targeting localhost to simulate network reconnaissance activity.
+- In Kibana, filter the logs using fields such as process.args or @timestamp to identify entries related to the Nmap scan.
+![Nmap Scan Log](Img/nmap_scan.png)
+- Visualize the filtered logs using a Kibana dashboard to highlight suspicious or abnormal activity.
+![Kibana Visualization](Img/visualization.png)
+- Create an alert rule in Kibana that detects Nmap scan patterns and configure it to trigger email notifications for real-time response.
+![Nmap Alert Configuration](Img/alert.png)
